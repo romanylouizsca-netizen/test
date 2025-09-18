@@ -3,7 +3,8 @@
 declare global {
   interface ImportMetaEnv {
       // FIX: Added DEV property to correctly type Vite's import.meta.env.DEV flag.
-      readonly DEV: boolean;
+      // FIX: Removed `readonly` modifier to match Vite's built-in type for `DEV`.
+      DEV: boolean;
       readonly VITE_FIREBASE_API_KEY: string;
       readonly VITE_FIREBASE_AUTH_DOMAIN: string;
       readonly VITE_FIREBASE_PROJECT_ID: string;
