@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  body {
+    background-color: #fff !important;
+  }
+  #report-content h1, #report-content h2, #report-content p, #report-content th, #report-content td {
+    color: #000 !important;
+  }
+}
